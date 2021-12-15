@@ -39,7 +39,8 @@
     "compile": "waffle .waffle.json",
     "pretest": "yarn compile",
     "test": "mocha",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "yarn test",
+    "postinstall": "yarn compile"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
